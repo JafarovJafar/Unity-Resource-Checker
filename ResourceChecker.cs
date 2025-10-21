@@ -5,7 +5,6 @@
 // This comes with no warranty, use at your own risk!
 // https://github.com/handcircus/Unity-Resource-Checker
 
-using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,88 +13,8 @@ using System.Collections.Generic;
 using System.Reflection;
 using Object = UnityEngine.Object;
 
-public class TextureDetails : IEquatable<TextureDetails>
+public class ResourceChecker : EditorWindow 
 {
-	public bool isCubeMap;
-	public int memSizeKB;
-	public Texture texture;
-	public TextureFormat format;
-	public int mipMapCount;
-	public List<Object> FoundInMaterials=new List<Object>();
-	public List<Object> FoundInRenderers=new List<Object>();
-	public List<Object> FoundInAnimators = new List<Object>();
-	public List<Object> FoundInScripts = new List<Object>();
-	public List<Object> FoundInGraphics = new List<Object>();
-	public List<Object> FoundInButtons = new List<Object>();
-	public bool isSky;
-	public bool instance;
-	public bool isgui;
-	public TextureDetails()
-	{
-
-	}
-
-    public bool Equals(TextureDetails other)
-    {
-        return texture != null && other.texture != null &&
-			texture.GetNativeTexturePtr() == other.texture.GetNativeTexturePtr();
-    }
-
-    public override int GetHashCode()
-    {
-		return (int)texture.GetNativeTexturePtr();
-    }
-
-    public override bool Equals(object obj)
-    {
-        return Equals(obj as TextureDetails);
-    }
-};
-
-public class MaterialDetails
-{
-
-	public Material material;
-
-	public List<Renderer> FoundInRenderers=new List<Renderer>();
-	public List<Graphic> FoundInGraphics=new List<Graphic>();
-	public bool instance;
-	public bool isgui;
-	public bool isSky;
-
-	public MaterialDetails()
-	{
-		instance = false;
-		isgui = false;
-		isSky = false;
-	}
-};
-
-public class MeshDetails
-{
-
-	public Mesh mesh;
-
-	public List<MeshFilter> FoundInMeshFilters=new List<MeshFilter>();
-	public List<SkinnedMeshRenderer> FoundInSkinnedMeshRenderer=new List<SkinnedMeshRenderer>();
-	public List<GameObject> StaticBatchingEnabled =new List<GameObject>();
-	public bool instance;
-
-	public MeshDetails()
-	{
-		instance = false;
-	}
-};
-
-public class MissingGraphic{
-	public Transform Object;
-	public string type;
-	public string name;
-}
-
-public class ResourceChecker : EditorWindow {
-
-
 	string[] inspectToolbarStrings = {"Textures", "Materials","Meshes"};
 	string[] inspectToolbarStrings2 = {"Textures", "Materials","Meshes", "Missing"};
 
@@ -1178,5 +1097,4 @@ public class ResourceChecker : EditorWindow {
 
 		return tTextureDetails;
 	}
-
 }
