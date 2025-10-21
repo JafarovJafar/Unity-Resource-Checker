@@ -1,0 +1,14 @@
+{
+  "name": "org.handcircus.resource-checker",
+  "version": "1.0.0",
+  "displayName": "Unity Resource Checker",
+  "description": "Editor utility for unity to help check resources in the current scene",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://github.com/handcircus/Unity-Resource-Checker/blob/master/README",
+  "author": {
+    "name": "Simon Oliver",
+    "email": "hello@handcircus.com",
+    "url": "https://github.com/handcircus"
+  }
+}
