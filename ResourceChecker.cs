@@ -57,7 +57,7 @@ namespace handcircus.ResourceCheck
 
 		bool collectedInPlayingMode;
 
-		[MenuItem ("Window/Resource Checker")]
+		[MenuItem ("Window/handcircus/Resource Checker")]
 		static void Init ()
 		{  
 			ResourceChecker window = (ResourceChecker) EditorWindow.GetWindow (typeof (ResourceChecker));
