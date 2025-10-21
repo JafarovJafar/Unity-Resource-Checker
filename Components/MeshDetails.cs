@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace handcircus.ResourceCheck
 {
-    public class MeshDetails
+    internal class MeshDetails
     {
         public Mesh mesh;
 

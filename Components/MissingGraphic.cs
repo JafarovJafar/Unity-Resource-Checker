@@ -2,7 +2,7 @@
 
 namespace handcircus.ResourceCheck
 {
-    public class MissingGraphic
+    internal class MissingGraphic
     {
         public Transform Object;
         public string type;

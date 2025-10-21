@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace handcircus.ResourceCheck
 {
-    public class MaterialDetails
+    internal class MaterialDetails
     {
         public Material material;
 

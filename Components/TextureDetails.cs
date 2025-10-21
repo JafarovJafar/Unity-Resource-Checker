@@ -5,7 +5,7 @@ using Object = UnityEngine.Object;
 
 namespace handcircus.ResourceCheck
 {
-    public class TextureDetails : IEquatable<TextureDetails>
+    internal class TextureDetails : IEquatable<TextureDetails>
     {
         public bool isCubeMap;
         public int memSizeKB;
