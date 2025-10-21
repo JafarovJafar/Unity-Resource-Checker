@@ -2,21 +2,16 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MaterialDetails
+namespace handcircus.ResourceCheck
 {
-
-    public Material material;
-
-    public List<Renderer> FoundInRenderers=new List<Renderer>();
-    public List<Graphic> FoundInGraphics=new List<Graphic>();
-    public bool instance;
-    public bool isgui;
-    public bool isSky;
-
-    public MaterialDetails()
+    public class MaterialDetails
     {
-        instance = false;
-        isgui = false;
-        isSky = false;
+        public Material material;
+
+        public List<Renderer> FoundInRenderers = new List<Renderer>();
+        public List<Graphic> FoundInGraphics = new List<Graphic>();
+        public bool instance = false;
+        public bool isgui = false;
+        public bool isSky = false;
     }
-};
+}

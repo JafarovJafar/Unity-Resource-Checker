@@ -1,6 +1,6 @@
 {
     "name": "handcircus.ResoourceChecker",
-    "rootNamespace": "handcircus.ResourceChecker",
+    "rootNamespace": "handcircus.ResourceCheck",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

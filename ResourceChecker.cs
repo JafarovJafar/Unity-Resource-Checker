@@ -13,6 +13,8 @@ using System.Collections.Generic;
 using System.Reflection;
 using Object = UnityEngine.Object;
 
+namespace handcircus.ResourceCheck
+{
 public class ResourceChecker : EditorWindow 
 {
 	string[] inspectToolbarStrings = {"Textures", "Materials","Meshes"};
@@ -1097,4 +1099,5 @@ public class ResourceChecker : EditorWindow
 
 		return tTextureDetails;
 	}
+}
 }
