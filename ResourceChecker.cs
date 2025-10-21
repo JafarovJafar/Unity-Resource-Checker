@@ -1,6 +1,7 @@
 // Resource Checker
 // (c) 2012 Simon Oliver / HandCircus / hello@handcircus.com
 // (c) 2015 Brice Clocher / Mangatome / hello@mangatome.net
+// (c) 2025 Jafar Jafarov / shafir productions / jafarovja@yandex.ru
 // Public domain, do with whatever you like, commercial or not
 // This comes with no warranty, use at your own risk!
 // https://github.com/handcircus/Unity-Resource-Checker
